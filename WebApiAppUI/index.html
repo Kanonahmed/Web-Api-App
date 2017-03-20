@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="src/app/module.js"></script></script>
+    <script src="src/app/controller.js"></script></script>
+    <script src="src/app/config.js"></script>
+    <script src="src/app/boot.js"></script></script>
+</head>
+<body ng-controller="mycontroller as ap">
+    <div>
+        ID: <input type="number" ng-model="ap.AthrId" />
+        Name:<input type="text" ng-model="ap.AthrNm"/>
+        <button ng-click="ap.add()">ADD</button>
+     </div>
+
+    <div>
+    <ul ng-repeat="x in ap.arr">
+    <li>
+        <div>
+         {{x.Id}}&nbsp;{{x.Name}}
+        </div>
+     </li>
+    </ul>
+    </div>
+
+</body>
+</html>
