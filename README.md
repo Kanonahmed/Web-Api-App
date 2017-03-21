@@ -1,0 +1,1 @@
+Here i have created application that has back end and front end. For front end i have used Angularjs and for back end i have used ASP.NET. I have created web api then i haved called from front end and got response from back end.
