@@ -111,7 +111,9 @@
     <Content Include="src\app\config.js" />
     <Content Include="src\app\controller.js" />
     <Content Include="src\app\module.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />

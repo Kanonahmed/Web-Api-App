@@ -9,7 +9,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{7E0239DF-5928-43B3-93EA-BF7DBBCAECA6}</ProjectGuid>
+    <ProjectGuid>{64BE8F73-D270-4549-953D-12E8E11D7E13}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -218,9 +218,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201703140654202_Initial.cs" />
-    <Compile Include="Migrations\201703140654202_Initial.Designer.cs">
-      <DependentUpon>201703140654202_Initial.cs</DependentUpon>
+    <Compile Include="Migrations\201703210919525_Initial.cs" />
+    <Compile Include="Migrations\201703210919525_Initial.Designer.cs">
+      <DependentUpon>201703210919525_Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Author.cs" />
@@ -284,8 +284,8 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201703140654202_Initial.resx">
-      <DependentUpon>201703140654202_Initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201703210919525_Initial.resx">
+      <DependentUpon>201703210919525_Initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

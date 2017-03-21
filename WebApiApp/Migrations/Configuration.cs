@@ -72,6 +72,7 @@ namespace WebApiApp.Migrations
                     Genre = "Picaresque"
                 }
                 );
+
         }
     }
 }
