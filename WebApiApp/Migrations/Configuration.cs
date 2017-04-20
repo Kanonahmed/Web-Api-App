@@ -1,10 +1,10 @@
 namespace WebApiApp.Migrations
 {
-    using Models;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
+    using WebApiApp.Models;
 
     internal sealed class Configuration : DbMigrationsConfiguration<WebApiApp.Models.WebApiAppContext>
     {
@@ -27,7 +27,6 @@ namespace WebApiApp.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
-
             context.Authors.AddOrUpdate(x => x.Id,
         new Author() { Id = 1, Name = "Jane Austen" },
         new Author() { Id = 2, Name = "Charles Dickens" },
@@ -72,6 +71,7 @@ namespace WebApiApp.Migrations
                     Genre = "Picaresque"
                 }
                 );
+
 
         }
     }

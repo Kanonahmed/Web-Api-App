@@ -9,6 +9,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Description;
+using WebApiApp.Filters;
 using WebApiApp.Models;
 
 namespace WebApiApp.Controllers
@@ -18,6 +19,7 @@ namespace WebApiApp.Controllers
         private WebApiAppContext db = new WebApiAppContext();
 
         // GET: api/Author
+        [Timetracking]
         public IQueryable<Author> GetAuthors()
         {
             return db.Authors;
@@ -37,6 +39,7 @@ namespace WebApiApp.Controllers
         }
 
         // PUT: api/Author/5
+        [Timetracking]
         [ResponseType(typeof(void))]
         public async Task<IHttpActionResult> PutAuthor(int id, Author author)
         {
@@ -72,6 +75,7 @@ namespace WebApiApp.Controllers
         }
 
         // POST: api/Author
+        [ValidateModel]
         [ResponseType(typeof(Author))]
         public async Task<IHttpActionResult> PostAuthor(Author author)
         {

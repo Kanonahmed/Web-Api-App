@@ -16,7 +16,7 @@
         };*/
         function add()
         {
-            console.log(vm.AthrId);
+            //console.log(vm.AthrId);
             var author = {
                 Id: vm.AthrId,
                 Name: vm.AthrNm
@@ -30,6 +30,7 @@
 
             }), function (error) {
                 //
+                
             };
         }
 
@@ -42,6 +43,14 @@
             };
         }
 
+        function deleteById() {
+            $http.delete('http://localhost:2934/api/Author/DeleteAuthor/' + vm.AuthorId).then(function (response) {
+                init();
+
+            }),function(error) {
+                //
+            };
+        }
 
       /*  $http.put('//localhost:2934/api/Author/PutAuthor/' + 4, author).then(function (response) {
             return $http.get('//localhost:2934/api/Author/GetAuthors');
@@ -57,6 +66,7 @@
        
         vm.add = add;
         vm.init = init;
+        vm.deleteById = deleteById;
 
     }
 

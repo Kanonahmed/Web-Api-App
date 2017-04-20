@@ -10,13 +10,17 @@
     <script src="src/app/boot.js"></script></script>
 </head>
 <body ng-controller="mycontroller as ap">
-    <div>
-        ID: <input type="number" ng-model="ap.AthrId" />
-        Name:<input type="text" ng-model="ap.AthrNm"/>
-        <button ng-click="ap.add()">ADD</button>
-     </div>
+<div>
+    ID: <input type="number" ng-model="ap.AthrId"/>
+    Name:<input type="text" ng-model="ap.AthrNm"/>
+    <button ng-click="ap.add()">ADD</button>
+</div>
+    <div style="margin-top: 20px">
+        Delete By ID: <input type="number" ng-model="ap.AuthorId"/>
+        <button ng-click="ap.deleteById()">DELETE</button>
+  </div>
 
-    <div>
+<div>
     <ul ng-repeat="x in ap.arr">
     <li>
         <div>
@@ -24,7 +28,7 @@
         </div>
      </li>
     </ul>
-    </div>
+ </div>
 
 </body>
 </html>
